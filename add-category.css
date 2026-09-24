@@ -1,0 +1,310 @@
+/* =====================================================
+   ADD CATEGORY
+===================================================== */
+
+.category-form-card {
+    width: 100%;
+    max-width: 750px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e9eef5;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ERROR */
+
+.category-error {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 15px;
+
+    margin-bottom: 22px;
+
+    border-radius: 8px;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* CATEGORY TYPE */
+
+.category-type-options {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+
+.category-type-option {
+    cursor: pointer;
+}
+
+
+.category-type-option input {
+    display: none;
+}
+
+
+.category-type-box {
+    min-height: 110px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    text-align: center;
+}
+
+
+.category-type-box i {
+    font-size: 25px;
+
+    margin-bottom: 3px;
+}
+
+
+.category-type-box strong {
+    font-size: 15px;
+
+    color: #172554;
+}
+
+
+.category-type-box small {
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* INCOME */
+
+.income-type i {
+    color: #16a34a;
+}
+
+
+/* EXPENSE */
+
+.expense-type i {
+    color: #dc2626;
+}
+
+
+/* SELECTED INCOME */
+
+.category-type-option input:checked
++ .income-type {
+    border-color: #16a34a;
+
+    background: #f0fdf4;
+
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.10);
+}
+
+
+/* SELECTED EXPENSE */
+
+.category-type-option input:checked
++ .expense-type {
+    border-color: #dc2626;
+
+    background: #fef2f2;
+
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.10);
+}
+
+
+/* HOVER */
+
+.category-type-box:hover {
+    border-color: #2563eb;
+
+    transform: translateY(-2px);
+}
+
+
+/* FORM */
+
+.category-form-card .form-group {
+    margin-bottom: 22px;
+}
+
+
+.category-form-card .form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.category-form-card input[type="text"],
+.category-form-card textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    color: #172554;
+}
+
+
+.category-form-card input[type="text"] {
+    height: 45px;
+}
+
+
+.category-form-card textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+.category-form-card input[type="text"]:focus,
+.category-form-card textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+/* ==========================================
+   CATEGORY FORM BUTTONS
+========================================== */
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+
+/* SAVE CATEGORY */
+
+.save-category-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+.save-category-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+
+/* CANCEL */
+
+.cancel-category-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    background: #f1f5f9;
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+
+.cancel-category-button:hover {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .category-form-card {
+        padding: 20px;
+    }
+
+    .category-type-options {
+        grid-template-columns: 1fr;
+    }
+
+}

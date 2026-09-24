@@ -1,0 +1,301 @@
+/* ==========================================
+   ADD EXPENSE
+========================================== */
+
+body {
+    margin: 0;
+
+    background: #f5f7fb;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.main-content {
+    margin-left: 250px;
+
+    min-height: 100vh;
+
+    padding: 35px;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+
+.page-header h1 {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 30px;
+}
+
+
+.page-header p {
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.add-expense-card {
+    width: 100%;
+
+    max-width: 700px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #eef2f7;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.required {
+    color: #dc2626;
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #172554;
+
+    font-size: 14px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    box-sizing: border-box;
+
+    transition: 0.2s;
+}
+
+
+.form-group input {
+    height: 45px;
+}
+
+
+.form-group textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+
+.save-expense-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.save-expense-button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+.cancel-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.cancel-button:hover {
+    background: #e2e8f0;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.login-error {
+    max-width: 700px;
+
+    margin-bottom: 20px;
+
+    padding: 13px 16px;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 8px;
+
+    color: #b91c1c;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .main-content {
+        margin-left: 0;
+
+        padding: 20px;
+    }
+
+
+    .add-expense-card {
+        padding: 20px;
+
+        max-width: none;
+    }
+
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+
+
+    .form-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .save-expense-button,
+    .cancel-button {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+}
